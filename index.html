@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasty Burger — Projeto acadêmico de delivery</title>
+<meta name="description" content="Tasty Burger: sistema de delivery de hamburgueria desenvolvido como projeto acadêmico por Douglas Gomes e Gustavo Fernando.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__brand">
+    <img src="assets/img/logo.png" alt="">
+    <span>Tasty Burger</span>
+  </div>
+  <div class="nav__links">
+    <a href="#sobre">Sobre</a>
+    <a href="#fluxo">Como funciona</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#equipe">Equipe</a>
+  </div>
+  <span class="nav__tag">Projeto acadêmico</span>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <div class="hero__eyebrow">Sistema de delivery · trabalho de curso</div>
+    <h1 class="hero__title">Tasty<br><em>Burger</em></h1>
+    <p class="hero__sub">Um sistema completo de pedidos pra hamburgueria: o cliente monta o carrinho, paga, e acompanha o pedido do preparo até a entrega. Feito do zero como projeto acadêmico.</p>
+    <div class="hero__cta">
+      <a href="#fluxo" class="btn btn--primary">Como funciona</a>
+      <a href="#cardapio" class="btn btn--ghost">Ver o cardápio</a>
+    </div>
+  </div>
+  <div class="hero__scroll">role pra baixo</div>
+</header>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="wrap sobre__grid">
+    <div class="sobre__text">
+      <span class="eyebrow">Sobre o projeto</span>
+      <h2 class="section-title">Pedido online, do jeito de lanchonete de bairro</h2>
+      <p>O Tasty Burger é um sistema de delivery pensado pra ser simples de usar e simples de manter — dá pra rodar numa lanchonete pequena, num carrinho de lanche ou em qualquer hamburgueria que queira vender pela internet sem depender de aplicativo de terceiro.</p>
+      <p>O cliente entra no site, escolhe os itens do cardápio, monta o carrinho e finaliza o pedido. Do outro lado, o dono recebe o pedido, atualiza o status e organiza a entrega — tudo pela mesma plataforma.</p>
+      <div class="sobre__authors">
+        <span class="author-chip">Dev · <b>Douglas Gomes</b></span>
+        <span class="author-chip">Dev · <b>Gustavo Fernando</b></span>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="frame__bar"><span></span><span></span><span></span></div>
+      <img src="assets/img/tela-cardapio.png" alt="Tela do cardápio do sistema Tasty Burger, com hambúrgueres, bebidas, porções e sobremesas organizados em categorias">
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA / FLUXO -->
+<section class="fluxo" id="fluxo">
+  <div class="wrap">
+    <div class="fluxo__head">
+      <span class="eyebrow">Como funciona</span>
+      <h2 class="section-title section-title--light">Do carrinho até a sua porta</h2>
+      <p>Cada pedido passa por um fluxo de status em tempo real — o mesmo que o cliente acompanha na tela "Meus pedidos" dentro do sistema.</p>
+    </div>
+
+    <div class="stepper" id="stepper">
+      <div class="step" data-step>
+        <div class="step__line"></div>
+        <div class="step__dot"></div>
+        <div class="step__label">01</div>
+        <div class="step__title">Pendente</div>
+        <div class="step__desc">Cliente monta o carrinho e confirma o pedido.</div>
+      </div>
+      <div class="step" data-step>
+        <div class="step__line"></div>
+        <div class="step__dot"></div>
+        <div class="step__label">02</div>
+        <div class="step__title">Preparando</div>
+        <div class="step__desc">Pedido cai na cozinha e o dono começa o preparo.</div>
+      </div>
+      <div class="step" data-step>
+        <div class="step__line"></div>
+        <div class="step__dot"></div>
+        <div class="step__label">03</div>
+        <div class="step__title">Saiu p/ entrega</div>
+        <div class="step__desc">Hambúrguer pronto e a caminho do endereço.</div>
+      </div>
+      <div class="step" data-step>
+        <div class="step__line"></div>
+        <div class="step__dot"></div>
+        <div class="step__label">04</div>
+        <div class="step__title">Entregue</div>
+        <div class="step__desc">Pedido chegou na porta do cliente.</div>
+      </div>
+      <div class="step" data-step>
+        <div class="step__line"></div>
+        <div class="step__dot"></div>
+        <div class="step__label">05</div>
+        <div class="step__title">Concluído</div>
+        <div class="step__desc">Pedido fechado no histórico da conta.</div>
+      </div>
+    </div>
+
+    <div class="fluxo__proof">
+      <img src="assets/img/tela-pedidos.png" alt="Tela real do sistema mostrando o pedido número 26 com status preparando e a linha do tempo de status">
+      <span>Print real da tela "Meus pedidos" do sistema — o cliente acompanha o status de cada pedido em tempo real.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CARDAPIO -->
+<section class="cardapio" id="cardapio">
+  <div class="cardapio__banner">
+    <div class="cardapio__banner-text">peça seu combo — hambúrguer + batata crocante + refri gelado.</div>
+  </div>
+  <div class="wrap cardapio__grid">
+    <div class="cardapio__text">
+      <span class="eyebrow">Cardápio</span>
+      <h2 class="section-title">Categorias organizadas, pedido rápido</h2>
+      <p>O cardápio é dividido por categoria pra facilitar a escolha — do clássico X-Burger até opção vegana. Cada item tem foto, descrição e preço, e vai direto pro carrinho com um clique.</p>
+      <div class="tag-list">
+        <span>Hambúrguer</span>
+        <span>Bebidas</span>
+        <span>Porção</span>
+        <span>Sobremesa</span>
+        <span>Vegano</span>
+      </div>
+    </div>
+    <div class="phone-frame">
+      <img src="assets/img/tela-produto.png" alt="Tela de produto do app, mostrando o Burger Melt em destaque com preço e seletor de quantidade">
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="stack">
+  <div class="wrap stack__row">
+    <div class="stack__label">
+      <span class="eyebrow">Tecnologia</span>
+      <p>Stack usada do front ao banco de dados, sem framework pesado — só o essencial pra rodar bem.</p>
+    </div>
+    <div class="badges">
+      <span class="badge">HTML5</span>
+      <span class="badge">CSS3</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">PHP</span>
+      <span class="badge">Bootstrap</span>
+      <span class="badge">MySQL · phpMyAdmin</span>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPE -->
+<section class="equipe" id="equipe">
+  <div class="wrap">
+    <span class="eyebrow">Equipe</span>
+    <h2 class="section-title">Quem fez</h2>
+    <div class="equipe__grid">
+      <div class="member">
+        <div class="member__role">Desenvolvimento</div>
+        <div class="member__name">Douglas Gomes</div>
+      </div>
+      <div class="member">
+        <div class="member__role">Desenvolvimento</div>
+        <div class="member__name">Gustavo Fernando</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__row">
+      <div class="footer__brand">
+        <img src="assets/img/logo.png" alt="">
+        Tasty Burger
+      </div>
+      <div class="footer__meta">Projeto acadêmico · 2026<br>Douglas Gomes &amp; Gustavo Fernando</div>
+    </div>
+    <div class="footer__bottom">feito com HTML, CSS, JS, PHP, Bootstrap e MySQL</div>
+  </div>
+</footer>
+
+<script>
+  // Anima o stepper de status do pedido quando a seção entra na tela
+  (function () {
+    var steps = document.querySelectorAll('#stepper [data-step]');
+    var section = document.getElementById('fluxo');
+    var started = false;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function activateUpTo(index) {
+      steps.forEach(function (step, i) {
+        step.classList.toggle('is-active', i <= index);
+      });
+    }
+
+    function runCycle() {
+      if (reduceMotion) {
+        activateUpTo(steps.length - 1);
+        return;
+      }
+      var i = 0;
+      activateUpTo(0);
+      var interval = setInterval(function () {
+        i++;
+        if (i >= steps.length) {
+          clearInterval(interval);
+          return;
+        }
+        activateUpTo(i);
+      }, 700);
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !started) {
+          started = true;
+          runCycle();
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observer.observe(section);
+  })();
+</script>
+
+</body>
+</html>
